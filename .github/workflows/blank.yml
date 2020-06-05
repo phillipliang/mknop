@@ -3,6 +3,9 @@ name: N1-OpenWrt-CI
 on:
   schedule:
     - cron: '0 22 * * *'
+  push:
+    branches: 
+      - master      
   repository_dispatch:
     types: run
     
