@@ -68,7 +68,7 @@ jobs:
       - name: Build firmware
         run: |
           cp lede/bin/targets/*/*/*.tar.gz ./openwrt
-          sudo ./make -d
+          sudo make -d
           cp lede/.config out/config.seed
           cd out
           i=0
