@@ -7,7 +7,7 @@ on:
     branches:
       - master
   repository_dispatch:
-    types: run
+    types: build
     
 env:
   TZ: Asia/Shanghai
